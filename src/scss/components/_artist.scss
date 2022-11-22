@@ -1,0 +1,66 @@
+.artist{
+  padding-bottom: 200px;
+
+  background-image: url("../img/artist_figure.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include tablet{
+    padding-bottom: 100px;
+  }
+}
+
+.artist_title{
+  padding-bottom: 20px;
+  color: $yellow;
+  text-transform: uppercase;
+}
+
+.artist_subtitle{
+  color: $white;
+  margin-bottom: 100px;
+}
+
+.artist_carts{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  @include small-tablet{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile{
+    grid-template-columns: 1fr;
+  }
+}
+
+.artist_item{
+
+  picture{
+    display: inline-block;
+    overflow: hidden;
+
+    img{
+      display: block;
+      transition: all 0.4s ease-in;
+
+      &:hover{
+        transform: scale(1.05);
+
+      }
+    }
+
+    &:hover{
+      box-shadow: 1px 0 8px rgba(205, 222, 0, 0.5);
+    }
+  }
+}
+
+.artist_name{
+  margin-bottom: 10px;
+
+  color: $yellow;
+  font-size: 32px;
+  font-weight: 300;
+}

@@ -1,0 +1,153 @@
+.project{
+  position: relative;
+  margin-bottom: 150px;
+
+  @include tablet{
+    margin-bottom: 50px;
+  }
+}
+
+.project_title {
+  padding-bottom: 40px;
+
+  color: $yellow;
+}
+
+.project_description{
+  padding-bottom: 180px;
+
+  @include mobile{
+    padding-bottom: 40px;
+  }
+}
+
+.project_description--item{
+  padding-bottom: 20px;
+
+  font-weight: 300;
+  max-width: 680px;
+}
+
+.project_btn{
+  position: relative;
+  right: 185px;
+  cursor: pointer;
+
+  background-image: url("../img/signin_1.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  width: 231px;
+  height: 144px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover{
+    background-image: url("../img/signin_2.png");
+  }
+
+  @include tablet{
+    right: -104px;
+  }
+
+  @include mobile{
+    right: 0;
+  }
+}
+
+.project_btn--left{
+  margin-right: 140px;
+  background-image: url("../img/signin_2.png");
+
+  &:hover{
+    background-image: url("../img/signin_1.png");
+  }
+
+  @include tablet{
+    display: none;
+  }
+
+}
+
+.project_bg{
+  position: absolute;
+  top: -40px;
+  right: -519px;
+
+  @include small-tablet{
+    top: -67px;
+    right: -343px;
+  }
+}
+
+.project_figure_left{
+  position: absolute;
+  z-index: 0;
+  top: -400px;
+  left: -30px;
+
+  @include big-desktop{
+    left: -240px;
+  }
+
+  @include tablet{
+    left: -131px;
+    height: 58vh;
+  }
+}
+
+.project_btn_wrapper{
+  display: flex;
+  position: relative;
+
+  @include mobile{
+    justify-content: center;
+  }
+}
+
+.project_hashtag{
+  position: absolute;
+  top: 157px;
+  left: 93px;
+
+  font-size: 20px;
+  text-shadow: 1px 0 1px #fff,
+  0 1px 1px #fff,
+  -1px 0 1px #fff,
+  0 -1px 1px #fff;
+
+  @include tablet{
+    left: 13px;
+  }
+
+  @include mobile{
+    display: none;
+  }
+}
+
+.project_hashtag--2{
+  top: 52px;
+  left: 366px;
+
+  @include tablet{
+    left: 300px;
+  }
+
+  @include mobile{
+    display: none;
+  }
+}
+
+.project_hashtag--3{
+  top: 125px;
+  left: 416px;
+
+  @include tablet{
+    left: 321px;
+  }
+
+  @include mobile{
+    display: none;
+  }
+}
+

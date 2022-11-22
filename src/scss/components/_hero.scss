@@ -1,0 +1,145 @@
+.hero{
+  height: 60vh;
+}
+
+.hero_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img{
+    max-height: 127px;
+    max-width: 565px;
+
+    @include big-desktop{
+      max-height: 100px;
+    }
+
+    @include tablet{
+      max-height: 74px;
+    }
+
+    @include mobile{
+      max-height: 62px;
+    }
+  }
+}
+
+.hero_subtitle{
+  padding-top: 40px;
+
+  @include tablet{
+    padding-top: 25px;
+    font-size: 34px;
+  }
+
+  @include mobile{
+    font-size: 18px;
+  }
+}
+
+.hero_wrapper{
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  margin-top: 40vh;
+}
+
+.hero_social{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  top: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+
+  @include tablet{
+    top: -35px;
+  }
+
+  @include small-tablet{
+    display: none;
+  }
+}
+
+.social_item{
+  transition: transform 0.3s ease-in;
+
+  path{
+    transition: fill 0.3s ease-in;
+  }
+
+  &:hover{
+    transform: scale(1.2);
+
+    path{
+      fill: #CDDE00;
+    }
+  }
+}
+
+.figure_top_left{
+  position: absolute;
+  margin-left: -605px;
+  top: -65px;
+  left: 0;
+  height: 1200px;
+  z-index: 1;
+
+  @include big-desktop{
+    height: 1000px;
+    margin-left: -557px;
+    top: -56px;
+  }
+
+  @include desktop{
+    top: 103px;
+  }
+
+  @include tablet{
+    margin-left: -455px;
+    top: 199px;
+    height: 878px;
+  }
+
+  @include small-tablet{
+    margin-left: -365px;
+    top: 324px;
+    height: 672px;
+  }
+
+  @include mobile{
+    margin-left: -201px;
+    top: 288px;
+    height: 446px;
+  }
+}
+
+.figure_top_right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  z-index: 0;
+
+  @include tablet{
+    height: 40vh;
+  }
+
+  @include small-tablet{
+    height: 34vh;
+  }
+}
+
+.bg_bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}

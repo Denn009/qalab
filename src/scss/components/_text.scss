@@ -1,0 +1,31 @@
+.title{
+  font-family: "Neue Machina", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: $white;
+
+  @include big-desktop{
+    font-size: 48px;
+  }
+
+  @include mobile{
+    font-size: 34px;
+  }
+}
+
+.description{
+  font-family: "Neue Machina", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 31px;
+  color: $white;
+
+  @include big-desktop{
+    font-size: 24px;
+  }
+
+  @include mobile{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

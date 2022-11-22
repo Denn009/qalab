@@ -1,0 +1,168 @@
+.contacts{
+  position: relative;
+  margin-top: 250px;
+
+  @include tablet{
+    margin-top: 150px;
+  }
+
+  @include mobile{
+    margin-top: 50px;
+  }
+
+  &_title{
+    padding-bottom: 40px;
+    color: $yellow;
+  }
+
+  &_subtitle{
+    padding-bottom: 60px;
+    max-width: 700px;
+  }
+
+  &_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include tablet{
+      margin-bottom: 20px;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+.contacts_email{
+  font-weight: 300;
+  color: $white;
+
+  @include mobile{
+    font-size: 16px;
+  }
+
+  &--item{
+    padding-bottom: 40px;
+
+    @include mobile{
+      padding-bottom: 20px;
+    }
+
+    a{
+      font-weight: 700;
+      color: $white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover{
+        color: $yellow;
+      }
+    }
+  }
+}
+
+.contacts_social_icons{
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.contacts_partners{
+  margin-top: 40px;
+}
+
+.contacts_right{
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+
+  @include tablet{
+    margin-left: 0;
+  }
+}
+
+.contact_subtitle_form{
+  padding-bottom: 20px;
+
+  max-width: 600px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.contacts_input{
+  margin-bottom: 20px;
+  padding-left: 20px;
+  max-width: 600px;
+  height: 85px;
+
+  border: 1px solid $white;
+  border-radius: 20px;
+  background-color: transparent;
+
+  font-size: 16px;
+  color: $white;
+
+  &::placeholder{
+    color: $white;
+  }
+}
+
+.contacts_textarea{
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  max-width: 600px;
+  height: 310px;
+
+  border: 1px solid $white;
+  border-radius: 20px;
+  background-color: transparent;
+
+  font-size: 16px;
+  color: $white;
+
+  &::placeholder{
+    color: $white;
+  }
+}
+
+.contact_btn{
+  margin-left: auto;
+  margin-top: 50px;
+  cursor: pointer;
+
+  background-image: url("../img/contact_btn.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  width: 231px;
+  height: 144px;
+  transition: all 0.2s ease-in-out;
+
+  @include mobile{
+    margin-top: 0;
+  }
+
+  &:hover{
+    background-image: url("../img/contact_btn_2.png");
+  }
+}
+
+.contact_link{
+
+  @include mobile{
+    margin: 0 auto;
+  }
+}
+
+.footer_figure{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  @include desktop{
+    display: none;
+  }
+}

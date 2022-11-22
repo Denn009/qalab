@@ -1,0 +1,101 @@
+.creation{
+  padding-bottom: 250px;
+
+  background-image: url("../img/creation/creation_figure.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+
+  @include tablet{
+    background-size: 278px;
+    background-position: right 318px;
+  }
+}
+
+.creation_title{
+  padding-bottom: 20px;
+  color: $yellow;
+}
+
+.creation_subtitle{
+  margin-bottom: 60px;
+  color: $white;
+}
+
+.audio_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.audio_item{
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+
+  width: 600px;
+  border: 1px solid $white;
+  border-radius: 20px;
+
+  @include small-tablet{
+    max-width: 500px;
+  }
+
+  @include mobile{
+    width: 325px;
+  }
+
+  &--social{
+    width: 230px;
+
+    @include mobile{
+      background-color: black;
+    }
+  }
+
+  &_mb{
+    margin-bottom: 40px;
+  }
+}
+
+.audio_btn{
+  margin-left: auto;
+}
+
+.audio_name{
+  padding-left: 20px;
+  color: $white;
+  font-weight: 300;
+
+  &--social{
+    font-size: 16px;
+  }
+
+  @include small-tablet{
+    font-size: 16px;
+  }
+}
+
+.audio_btn{
+  width: 35px;
+  height: 35px;
+
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/creation/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn_active{
+  background-image: url("../img/creation/pause.svg");
+}
+
+.video_wrapper{
+
+  iframe{
+    width: 440px;
+    height: 250px;
+  }
+}
+
