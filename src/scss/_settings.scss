@@ -118,3 +118,9 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+button, input, textarea, a{
+  &:focus{
+    outline: 1px solid $yellow;
+  }
+}

@@ -42,7 +42,13 @@
   height: 144px;
   transition: all 0.2s ease-in-out;
 
-  &:hover{
+  @include for-desktop{
+    &:hover{
+      background-image: url("../img/signin_2.png");
+    }
+  }
+
+  &:active{
     background-image: url("../img/signin_2.png");
   }
 
@@ -75,8 +81,8 @@
   right: -519px;
 
   @include small-tablet{
-    top: -67px;
-    right: -343px;
+    top: -48px;
+    right: -102px;
   }
 }
 
@@ -126,8 +132,8 @@
 }
 
 .project_hashtag--2{
-  top: 52px;
-  left: 366px;
+  top: -1px;
+  left: 396px;
 
   @include tablet{
     left: 300px;

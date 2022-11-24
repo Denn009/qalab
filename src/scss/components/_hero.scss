@@ -74,7 +74,18 @@
     transition: fill 0.3s ease-in;
   }
 
-  &:hover{
+
+  @include for-desktop {
+
+    &:hover {
+      transform: scale(1.2);
+
+      path {
+        fill: #CDDE00;
+      }
+    }
+  }
+  &:active{
     transform: scale(1.2);
 
     path{

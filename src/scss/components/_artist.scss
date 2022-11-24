@@ -23,16 +23,8 @@
 
 .artist_carts{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 10px;
-
-  @include small-tablet{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @include mobile{
-    grid-template-columns: 1fr;
-  }
 }
 
 .artist_item{
@@ -45,13 +37,22 @@
       display: block;
       transition: all 0.4s ease-in;
 
-      &:hover{
+      @include for-desktop{
+        &:hover{
+          transform: scale(1.05);
+        }
+      }
+      &:active{
         transform: scale(1.05);
-
       }
     }
 
-    &:hover{
+    @include for-desktop{
+      &:hover{
+        box-shadow: 1px 0 8px rgba(205, 222, 0, 0.5);
+      }
+    }
+    &:active{
       box-shadow: 1px 0 8px rgba(205, 222, 0, 0.5);
     }
   }

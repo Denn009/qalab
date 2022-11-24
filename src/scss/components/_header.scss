@@ -52,7 +52,16 @@
     transition: fill 0.3s ease-in;
   }
 
-  &:hover{
+  @include for-desktop{
+    &:hover{
+
+      path{
+        fill: $yellow;
+      }
+    }
+  }
+
+  &:active{
 
     path{
       fill: $yellow;
