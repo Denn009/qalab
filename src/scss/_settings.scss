@@ -119,7 +119,7 @@ a {
   position: relative;
 }
 
-button, input, textarea, a{
+button{
   &:focus{
     outline: 1px solid $yellow;
   }
